@@ -1,7 +1,7 @@
 {
   "name": "@dreamoslib/crypto-js",
   "description": "JavaScript library of crypto standards.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "build": "grunt build",
@@ -12,7 +12,7 @@
     "crypto": false
   },
   "dependencies": {
-    "expo-random": "^13.0.0",
+    "@dreamoslib/tweetnacl": "^0.1.0",
     "typedarray-to-buffer": "^4.0.0"
   },
   "devDependencies": {

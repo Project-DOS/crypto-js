@@ -1,5 +1,5 @@
 /*globals window, global, require*/
-const { getRandomBytes } = require("expo-random");
+const { randomBytes } = require("@dreamoslib/tweetnacl");
 const toBuffer = require("typedarray-to-buffer");
 
 /**
@@ -15,7 +15,7 @@ var CryptoJS =
      */
     var cryptoSecureRandomInt = function () {
       try {
-        return toBuffer(getRandomBytes(4)).readInt32LE();
+        return toBuffer(randomBytes(4)).readInt32LE();
       } catch (err) {}
     };
 
